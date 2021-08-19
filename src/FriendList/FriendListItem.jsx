@@ -1,4 +1,4 @@
-function LiFriendList({ avatar, name, isOnline, id }) {
+function FriendListItem({ avatar, name, isOnline, id }) {
 	return (
 		<li key={id} className={'itemFriends ' + isOnline}>
 			<span className="status">{isOnline}</span>
@@ -8,10 +8,10 @@ function LiFriendList({ avatar, name, isOnline, id }) {
 	)
 }
 
-LiFriendList.defaultProps = {
+FriendListItem.defaultProps = {
 	avatar: 'https://www.flaticon.com/svg/static/icons/svg/763/763707.svg',
 	name: 'name',
 	isOnline: 'missing isOnline',
 }
 
-export default LiFriendList
+export default FriendListItem

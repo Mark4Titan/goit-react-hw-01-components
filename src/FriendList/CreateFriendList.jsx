@@ -1,14 +1,14 @@
 import './friends.css'
-import LiFriendList from './LiFriendList.jsx'
+import FriendListItem from './FriendListItem.jsx'
 
 function FriendList({ friends }) {
 	return (
 		<ul className="friendlist">
-			{/* <LiFriendList friends={friends} /> */}
+			{/* <FriendListItem friends={friends} /> */}
 			{friends.map(elem => {
 				const isOnline = elem.isOnline === true ? 'on_line' : 'off_line'
 				return (
-					<LiFriendList
+					<FriendListItem
 						avatar={elem.avatar}
 						name={elem.name}
 						isOnline={isOnline}
