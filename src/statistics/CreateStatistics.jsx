@@ -17,7 +17,7 @@ function Statistics({ title, stats }) {
 	return (
 		<div className="statisticsBox">
 			<section className="statistics">
-				{title ? <h2 className="title">{title}</h2> : <></>}
+				{title && <h2 className="title">{title}</h2>}
 				<ul className="stat-list">
 					{stats.map(elem => {
 						return (
